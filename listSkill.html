@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills | SkillSwap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+      
+</head>
+<body style="background-color: #f4f7fc;">
+
+  <div class="container skills-section">
+    <h2 class="text-center mb-4">List Your Skills</h2>
+
+    <form id="skillsForm">
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <label for="haveSkill" class="form-label">Skills You Have</label>
+          <input type="text" id="haveSkill" class="form-control" placeholder="e.g., Python, UI Design">
+          <button type="button" class="btn btn-outline-primary mt-2" onclick="addSkill('have')">Add</button>
+
+          <div id="haveList" class="mt-3"></div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="wantSkill" class="form-label">Skills You Want</label>
+          <input type="text" id="wantSkill" class="form-control" placeholder="e.g., Guitar, Data Science">
+          <button type="button" class="btn btn-outline-success mt-2" onclick="addSkill('want')">Add</button>
+
+          <div id="wantList" class="mt-3"></div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 mt-3">Save Skills</button>
+    </form>
+  </div>
+
+  <script>
+    const haveList = document.getElementById('haveList');
+    const wantList = document.getElementById('wantList');
+
+    function addSkill(type) {
+      const input = document.getElementById(type + 'Skill');
+      const value = input.value.trim();
+      if (value === '') return;
+
+      const span = document.createElement('span');
+      span.className = 'tag';
+      span.innerText = value;
+
+      if (type === 'have') haveList.appendChild(span);
+      else wantList.appendChild(span);
+
+      input.value = '';
+    }
+
+    document.getElementById('skillsForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('✅ Skills saved successfully!');
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+/* Login page css */
+    body {
+      background: linear-gradient(to right, #f0f2f5, #ffffff);
+    }
+    .login-box {
+      max-width: 400px;
+      margin: auto;
+      margin-top: 60px;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .btn-google, .btn-apple {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .btn-login {
+      background-color: #1e3a8a;
+      color: white;
+    }
+    .btn-login:hover {
+      background-color: #1d4ed8;
+    }
+    .divider {
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+    .divider::before,
+    .divider::after {
+      content: '';
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background: #ccc;
+      top: 50%;
+    }
+    .divider::before {
+      left: 0;
+    }
+    .divider::after {
+      right: 0;
+    }
+
+ /*About page css */
+ .about-section {
+      background: linear-gradient(135deg, #f9f9f9, #e0eaff);
+      padding: 60px 20px;
+    }
+    .highlight {
+      color: #6c63ff;
+      font-weight: bold;
+    }
+    .about-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: #6c63ff;
+    }
+    .rounded-card {
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+
+    /* contact Us CSS */
+    .contact-section {
+      padding: 60px 20px;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #6c63ff;
+    }
+    .header-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #6c63ff;
+    }
+
+
+    /*profile page css */
+    .form-section {
+      max-width: 700px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    .form-section h2 {
+      color: #6c63ff;
+      font-weight: bold;
+    }
+    .avatar-preview {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #6c63ff;
+    }
+
+    /*list skills that you want*/
+    .skills-section {
+      max-width: 800px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    .skills-section h2 {
+      color: #6c63ff;
+      font-weight: bold;
+    }
+    .tag {
+      background-color: #e0e0ff;
+      border-radius: 20px;
+      padding: 6px 14px;
+      margin: 5px;
+      display: inline-block;
+    }
+  
+
+    /*Match and Connect Css*/
+
+    .form-section {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+    .match-card {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #6c63ff;
+    }
+    .badge-skill {
+      background-color: #e0e0ff;
+      border-radius: 20px;
+      padding: 5px 12px;
+      margin: 2px;
+      font-size: 0.85rem;
+    }
+
+
+    /*Swap Learn Teach Css*/
+    .section-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .badge-skill {
+      background-color: #e0e0ff;
+      border-radius: 20px;
+      padding: 5px 12px;
+      margin: 2px;
+      font-size: 0.85rem;
+    }
+
+    /* Featured Categories*/
+
+    /* Design page css*/
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 700;
+      color: #333;
+    }
+    .card {
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .skill-icon {
+      font-size: 30px;
+      color: #6c63ff;
+    }
+    .btn-explore {
+      font-size: 0.85rem;
+      margin-top: 15px;
+    }
+
+
+    /* Photography page css*/
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+    .card {
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .skill-icon {
+      font-size: 30px;
+      color: #27ae60;
+    }
+    .btn-explore {
+      font-size: 0.85rem;
+      margin-top: 15px;
+    }
+
+
+    /* Language.css*/
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+    .card {
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .skill-icon {
+      font-size: 30px;
+      color: #27ae60;
+    }
+    .btn-explore {
+      font-size: 0.85rem;
+      margin-top: 15px;
+    }
+
+    /*marketing.css*/
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: 700;
+      color: #2c3e50;
+    }
+    .card {
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.07);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .skill-icon {
+      font-size: 32px;
+      color: #e67e22;
+    }
+    .btn-explore {
+      font-size: 0.85rem;
+      margin-top: 15px;
+    }

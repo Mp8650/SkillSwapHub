@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+</head>
+<body style=" background-color: #f4f7fc;">
+    
+  <div class="container form-section">
+    <h2 class="mb-4 text-center">Create Your Profile</h2>
+
+    <form id="profileForm">
+      <!-- Profile Picture Upload -->
+      <div class="mb-4 text-center">
+        <img id="avatarPreview" src="https://via.placeholder.com/100" class="avatar-preview mb-2" alt="Profile Picture Preview">
+        <div>
+          <input type="file" accept="image/*" id="avatarInput" class="form-control mt-2" />
+        </div>
+      </div>
+
+      <!-- Name -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <!-- Bio -->
+      <div class="mb-3">
+        <label for="bio" class="form-label">Short Bio</label>
+        <textarea id="bio" class="form-control" rows="3" placeholder="Tell us about yourself..." required></textarea>
+      </div>
+
+      <!-- Skills Offered -->
+      <div class="mb-3">
+        <label for="skillsOffered" class="form-label">Skills You Can Offer (comma separated)</label>
+        <input type="text" id="skillsOffered" class="form-control" placeholder="e.g., Web Development, Python, Public Speaking" required>
+      </div>
+
+      <!-- Skills Interested -->
+      <div class="mb-3">
+        <label for="skillsWanted" class="form-label">Skills You Want to Learn (comma separated)</label>
+        <input type="text" id="skillsWanted" class="form-control" placeholder="e.g., Graphic Design, Photography" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 mt-3">Save Profile</button>
+    </form>
+  </div>
+
+
+
+
+    <!--Script-->
+  <script>
+    // Avatar preview
+    const avatarInput = document.getElementById('avatarInput');
+    const avatarPreview = document.getElementById('avatarPreview');
+
+    avatarInput.addEventListener('change', function () {
+      const file = this.files[0];
+      if (file) {
+        avatarPreview.src = URL.createObjectURL(file);
+      }
+    });
+
+    // Handle form submission
+    document.getElementById('profileForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const bio = document.getElementById('bio').value;
+      const skillsOffered = document.getElementById('skillsOffered').value;
+      const skillsWanted = document.getElementById('skillsWanted').value;
+
+      alert(`✅ Profile Saved!\n\nName: ${name}\nBio: ${bio}\nSkills Offered: ${skillsOffered}\nSkills Wanted: ${skillsWanted}`);
+    });
+  </script>
+</body> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js">
+</script
+</html>
